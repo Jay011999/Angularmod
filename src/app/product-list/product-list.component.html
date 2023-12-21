@@ -1,1 +1,33 @@
-<p>product-list works!</p>
+<h1>Products List</h1>
+{{products.length}}
+<div *ngIf="products.length<4">
+
+<table>
+  <thead>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Description</td>
+    <td>Type</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.type }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div *ngIf="isadmin; then adminBlock else userBlock"></div>
+<ng-template #adminBlock><p>Hello Admin</p></ng-template>
+<ng-template #userBlock><p>Hello User</p></ng-template>
+
+<div [ngSwitch]="somevalue.charAt(3)">
+  {{somevalue.charAt(3)}}
+  <div *ngSwitchCase="'fddf'">Content for Ram</div>
+  <div *ngSwitchCase="'dfd'">Content for Shyamam</div>
+  <div *ngSwitchCase="'_ ' ">Content for prem</div>
+  <div *ngSwitchDefault>Wrong Value</div>
+</div>
+
