@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angularmod';
+
+  isvalid=true;
+  imgpath='../favicon.ico'
+
+  onClick(){
+    alert('button clicked!!')
+  }
 }
