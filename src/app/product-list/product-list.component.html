@@ -1,4 +1,12 @@
-<h1>Products List</h1>
+<div class="categories">
+  <ul>
+    <li *ngFor="let category of categories">
+      <a [routerLink]="[category]" [queryParams]="{category:category}">{{ category }}</a>
+    </li>
+  </ul> 
+</div>
+<router-outlet></router-outlet>
+<!-- <h1>Products List</h1>
 {{products.length}}
 <div *ngIf="products.length<4">
 
@@ -30,4 +38,4 @@
   <div *ngSwitchCase="'_ ' ">Content for prem</div>
   <div *ngSwitchDefault>Wrong Value</div>
 </div>
-
+ -->

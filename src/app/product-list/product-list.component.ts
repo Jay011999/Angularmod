@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css',
 })
 export class ProductListComponent {
-  products: any = [
+ /* products: any = [
     {
       id: 1,
       name: 'Product 1',
@@ -28,5 +28,8 @@ export class ProductListComponent {
   ];
 
   isadmin=false;
-  somevalue='Ram_';
+  somevalue='Ram_';*/
+
+  categories:string[]=['Mobiles','Laptops','Furniture','TVs'];
 }
+

@@ -1,0 +1,11 @@
+.title{
+    display: inline;
+    margin: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:70px;
+}
+
+a{
+    margin-left: 5px;
+   margin: 10px 5px ;
+}

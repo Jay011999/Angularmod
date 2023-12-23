@@ -2,19 +2,28 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './home/home.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { LaptopsComponent } from './laptops/laptops.component';
+import { FurnitureComponent } from './furniture/furniture.component';
 
 const routes: Routes = [
   {
-    path:'products',component:ProductListComponent
-  }
-  ,
+    path: 'products',
+    component: ProductListComponent,
+    children: [
+      { path: 'Mobiles', component: MobilesComponent },
+      { path: 'Laptops', component: LaptopsComponent },
+      { path: 'Furniture', component: FurnitureComponent },
+    ],
+  },
   {
-    path:'home',component:HomeComponent
-  }
+    path: 'home',
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

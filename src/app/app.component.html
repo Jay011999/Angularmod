@@ -1,20 +1,21 @@
 <!-- App-routing -->
+
+
+<!-- String Interpolation -->
+<div>
+    <img [src]="imgpath" />
+  <h1 class="title">{{ title }}</h1>
+  
+</div>
 <a [routerLink]="'/home'">Home</a>
 <a [routerLink]="'/products'">Products</a>
 
-    
-<!-- String Interpolation -->
-<div><h1>{{title}}</h1></div>
-
 <!-- Property binding -->
 
-<img [src]="imgpath">
-
-<button [disabled]="isvalid">Click me!</button>
-
+<!-- <button [disabled]="isvalid">Click me!</button> -->
 
 <!-- Event binding -->
 
-<button (click)="onClick()">Add</button>
+<!-- <button (click)="onClick()">Add</button> -->
 
 <router-outlet></router-outlet>
