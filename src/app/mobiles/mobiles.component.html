@@ -1,2 +1,22 @@
 <p>mobiles works!</p>
 <button (click)="addItem()">Click for data</button>
+<div>
+  <table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>name</td>
+            <td>Id</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.category }}</td>
+        <td><a routerLink="['../mobile-detail',product.id]">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
