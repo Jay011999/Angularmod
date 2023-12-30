@@ -9,6 +9,7 @@ import { MobilesComponent } from './mobiles/mobiles.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { FurnitureComponent } from './furniture/furniture.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MobileDetailComponent } from './mobile-detail/mobile-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     MobilesComponent,
     LaptopsComponent,
-    FurnitureComponent
+    FurnitureComponent,
+    MobileDetailComponent
   ],
   imports: [
     BrowserModule,

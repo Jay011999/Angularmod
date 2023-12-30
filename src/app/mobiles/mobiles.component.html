@@ -15,7 +15,7 @@
         <td>{{ product.id }}</td>
         <td>{{ product.name }}</td>
         <td>{{ product.category }}</td>
-        <td><a routerLink="['../mobile-detail',product.id]">View</a></td>
+        <td><a [routerLink]="['../mobile-detail',product.id]">View</a></td>
       </tr>
     </tbody>
   </table>
