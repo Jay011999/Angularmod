@@ -17,4 +17,7 @@ export class MobileDetailComponent implements OnInit {
     const queryParams = { category: 'Mobiles' };
     this.router.navigate(['/products/Mobiles'], { queryParams });
   }
+  public toShowStructural:true | undefined;
+
+ 
 }
